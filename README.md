@@ -28,3 +28,36 @@ If you need to add any modifications to the sitemap module, simply override the 
 Future Enhancements:
 
 Later I will create an update to clear the cache of the sitemap rendering whenever a page gets updated, added, or removed. Also, it will notify your google, bing, yahoo or any other search providers that your sitemap has updated. Stay tuned!
+
+# Included in installation
+Sitecore Items:
+1. Sitemap Page Template (/sitecore/templates/SEO/Sitemap Page)
+2. Sitemap Settings Template (/sitecore/templates/SEO/Sitemap Settings)
+3. Sitemap Rendering (/sitecore/layout/Renderings/SEO/Sitemap)
+4. Sitemap Layout (/sitecore/layout/Layouts/SitemapLayout)
+
+Files:
+1. SBR.Sitemap.dll (\Website\bin\SBR.Sitemap.dll)
+2. SitemapLayout.cshtml (\Website\Views\Layouts\SitemapLayout.cshtml)
+3. Sitemap.cshtml (\Website\Views\Sitemap\Sitemap.cshtml)
+
+# Instructions for Installation
+
+A wildcard page template will be created under the path /sitecore/templates/SEO/Sitemap Page. The presentation details of the standard values of this page have been configured with a layout that just has a placeholder of "body." There is only one rendering - Sitemap. The rendering is located under /sitecore/layout/Renderings/SEO/Sitemap. The caching is turned on by default for this rendering.
+
+The Sitemap page template has two fields: "Extra Sitemap Pages," and "Item Buckets For Wildcard." The Extra Sitemap Pages field is a multi list with search used for if you need to include any pages in your sitemap that are not under your site root. The Item Buckets For Wildcard field is a multi list with search to include any item buckets that you may use for wildcards. The sitemap processor will call the sitecore Link Manager so if you set up your url generation for wildcards in a custom Link Provider, the urls will be generated as expected. 
+
+BASIC SETUP:
+1. Right click under your start path and select "Insert from template"
+2. Select Sitemap Page and name the page Sitemap
+3. Publish
+
+SETUP WITH EXTRA PAGES:
+1. Follow the basic setup procedures
+2. On your sitemap page, select any extra pages you want to have included in your sitemap under Extra Sitemap Pages
+3. For wildcard pages, select the item bucket the pages you want to include are under.
+
+NOTE: You must make sure you have each of your pages (not including pages you select under Extra Sitemap Pages) inherit from a Sitemap Settings template located under /sitecore/templates/SEO/Sitemap Settings
+
+** Need to make enhancements specific to your site? **
+The controller I created for this Sitemap is completely overridable from writing how the pages are retreived to creating an empty virtual method to retreive any extra pages that I have not thought of.
