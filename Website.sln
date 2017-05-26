@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SBR.Sitemap", "C:\Projects\Sitemap\Source\SBR.Sitemap\SBR.Sitemap.csproj", "{A2EB9B49-E80E-4CEF-85DB-08D30E11B831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Source\Website\Website.csproj", "{FE628F2C-C848-4445-8828-3E231380DB06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2EB9B49-E80E-4CEF-85DB-08D30E11B831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2EB9B49-E80E-4CEF-85DB-08D30E11B831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2EB9B49-E80E-4CEF-85DB-08D30E11B831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2EB9B49-E80E-4CEF-85DB-08D30E11B831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE628F2C-C848-4445-8828-3E231380DB06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE628F2C-C848-4445-8828-3E231380DB06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE628F2C-C848-4445-8828-3E231380DB06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE628F2C-C848-4445-8828-3E231380DB06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
