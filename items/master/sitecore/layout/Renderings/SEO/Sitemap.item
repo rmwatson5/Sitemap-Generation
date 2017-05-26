@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {0D4791B2-82CD-44CD-907E-10369D0D1FCB}
+database: master
+path: /sitecore/layout/Renderings/SEO/Sitemap
+parent: {FCAAD9E5-AA35-451B-BCFE-05EC1BA1C38D}
+name: Sitemap
+master: {00000000-0000-0000-0000-000000000000}
+template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
+templatekey: Controller rendering
+created: 20170526T002256:636313549762330000
+
+----field----
+field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
+name: Controller
+key: controller
+content-length: 7
+
+Sitemap
+----field----
+field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
+name: Controller Action
+key: controller action
+content-length: 7
+
+Sitemap
+----field----
+field: {3D08DB46-2267-41B0-BC52-BE69FD618633}
+name: Cacheable
+key: cacheable
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 6806d5ec-778e-4143-9bce-ae9e4b619ca1
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170504T232257Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6806d5ec-778e-4143-9bce-ae9e4b619ca1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170504T235724Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
