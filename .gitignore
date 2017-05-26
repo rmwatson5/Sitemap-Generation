@@ -140,3 +140,4 @@ node_modules/*
 \.idea/
 Libraries/
 packages/
+**/Web.config

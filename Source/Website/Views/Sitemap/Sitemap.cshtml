@@ -1,0 +1,24 @@
+﻿@using Sitecore.Links
+@model SBR.Sitemap.Models.SitemapRenderingModel
+
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+@foreach (var page in Model.Pages)
+{
+    var urlOptions = UrlOptions.DefaultOptions;
+    urlOptions.AlwaysIncludeServerUrl = true;
+
+    var url = LinkManager.GetItemUrl(page, urlOptions);
+
+    var lastmod = page.Publishing.PublishDate.Equals(DateTime.MinValue) ? DateTime.Now.ToString("yyyy-MM-dd") : page.Publishing.PublishDate.ToString("yyyy-MM-dd");
+    <text>
+        <url>
+            <loc>@Html.Raw(url)</loc>
+            <lastmod>@lastmod</lastmod>
+        </url>
+    </text>
+}
+</urlset>
